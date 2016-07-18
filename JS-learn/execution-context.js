@@ -27,11 +27,11 @@ function f1(){
 		console.log(a);
 	}
 
-	//f2();
+	f2();
 	
-	//var a=20;
+	var a=20;
 	
-	return f2;
+	//return f2;
 }
 
 var f=f1();
