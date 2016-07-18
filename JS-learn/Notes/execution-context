@@ -1,0 +1,60 @@
+
+
+
+Execution-Context
+-----------------
+
+  'memory , where args and local-var will exist to execute instructions'
+
+
+   when initial-js loaded into runtime, 
+   one 'global-execution-context' created by default.
+   
+   in browser
+   
+   --> window
+   
+    in NodeJs
+    
+   --> process & global 
+   
+   -----------------------------------------------
+   
+   context - 2 phases
+   ===================
+   
+   
+   phase-1 : context creation
+   
+   --> all variable declaration in that context are hoisted(lifting-up) to top of context
+       with default value(undefined)
+   
+   --> for global-context , all variables becomes property of global-obj.
+   
+   phase-2 : context execution
+   
+   --> all instruction get execute step-by-step.
+   
+   -----------------------------------------------
+   
+   
+   every func-invocation also creates new execution-context
+   which is child of above-context
+   
+   ------------------------------------------------------
+   
+   To avoid hoisting confuse , always declare variables at top of context
+   
+   ------------------------------------------------------
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   

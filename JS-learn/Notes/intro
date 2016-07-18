@@ -1,0 +1,66 @@
+
+
+JS is
+
+--> scripting lang for web-pgaes in browser envi.
++
+--> server-side programming lang on NodeJS
+
+JS features
+
+  --> functional programming-lang
+  --> OO lang.
+
+  --> dynamic data-types.
+  --> closure support
+
+  --> single-threaded lang.
+  --> it supports better concurrency with 'Event-Loop'
+  --> we can do Non-Blocking IO.
+
+------------------------------------------
+
+
+JS is based on 'ECMAScript' spec
+
+latest: ECMAScript-2015 or ES6
+
+-------------------------------------------
+
+
+
+how JS programs will get execute ?
+
+using 'JS-engine'
+
+
+browser-envi
+
+a. chrome  --> v8 ( c++ )
+b. firefox --> rhino ( java )
+c. IE      --> chakra
+d. safari  --> nitro
+
+non browser-envi
+
+a. NodeJs  --> v8
+b. JVM     --> nashorn
+c. Apache CouchDB
+
+
+--------------------------------------
+
+
+JS - learn
+
+  --> data-structures
+  --> functions  
+  --> closure  
+  --> 'this' keyword
+  --> Inheritence
+  --> objs - depth
+  --> patterns
+  --> How JS supports non-blocking-IO and cocurrency with simulator 
+
+
+---------------------------------------

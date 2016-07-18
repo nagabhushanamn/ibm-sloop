@@ -1,0 +1,18 @@
+
+
+ data-types
+ -----------
+ 
+ 1. simple types --> values
+ 
+    a. string
+    b. number
+    c. boolean
+    d. null
+    e. undefined
+    f. symbol  ( es-6 )
+    
+ 2. complex types --> objects
+ 
+ 
+    JS-lang --> collection key:value pairs about an entity.
