@@ -1,0 +1,31 @@
+
+
+
+standards to create/load js-modules effectively
+
+1. AMD ( async module definition )
+2. commonJS
+
+-------------------------------------------------
+
+AMD
+
+
+  to create module ---> define()
+  to load module   ---> require()
+  
+--------------------------------------------------  
+
+
+commonJS
+
+
+
+
+
+
+
+
+
+
+

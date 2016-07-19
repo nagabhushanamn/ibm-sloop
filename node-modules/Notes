@@ -1,0 +1,11 @@
+
+
+NodeJS follows 'commonJS' module standards
+
+
+--> every file(.js) by default an module.
+--> we need to explicitly export abstract behav to other modules. ( module.exports )
+--> we must load required modules using 'require' function
+
+
+-------------------------------------------
