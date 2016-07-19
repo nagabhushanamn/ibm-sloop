@@ -1,0 +1,106 @@
+
+
+what JS-lang can do with HTML-page in browser?
+
+ JS-lang using Web-APIs can bring any dynamic-functionality to web-page.
+ 
+ e.g 
+ 
+    Web APIs  --> DOM,XHR,Timer etc...
+
+   --> all Web APIs implemented and abstracted ( as JS objects and func ) by browsers based w3c standards
+
+using DOM API
+--------------
+--> can create/retreive/update/delete HTML elements
+--> can change element's text content
+--> can change element's style
+--> can change element's attribute
+--> can listen event's on elements
+--> can validate for-fields
+--> can create RICH UI-components
+
+using XHR API
+--------------
+--> can communicate with server-side, update results in existing page ( AJAX )
+
+
+using Timer API
+----------------
+
+   setTimeout() , setInterval()
+   
+HTML-5 : New APIs
+------------------
+
+  --> canvas APIs
+  --> Audio/Video APIs
+  --> storage API
+  --> Geo API
+  --> WebWorker
+  --> SSE
+  --> WS
+  
+  etc.....
+  
+  
+  -------------------------------------
+  
+  Front-End Appln : HTML+CSS + ( JS + WEb APIs )
+  
+  --------------------------------------------------
+  
+
+  ==================================================================
+  
+  
+  JS is
+  
+    --> single-threaded lang
+    --> supports better concurrency
+    --> all IO operations non-blocking
+    
+    
+  ----------------------------------
+  
+  e.g chrome browser
+  
+  
+    1. JS-engine ( v8 )
+    
+       single-call-stack
+       heap
+       
+    2. Web API Impln
+    
+    3. callback/message queue
+    
+    4. Event-Loop   
+    
+    
+  ------------------------------------       
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+   
+   
+   
+
+
+
+
