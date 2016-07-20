@@ -31,6 +31,7 @@ server.on('request', function(req, res) {
 	// streams 
 	
 	var readStream=fs.createReadStream('video.mp4');
+	
 	//	readStream.on('data',function(chunk){
 	//		console.log(chunk.length);
 	//		res.write(chunk);

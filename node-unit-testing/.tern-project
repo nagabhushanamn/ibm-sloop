@@ -5,12 +5,14 @@
     },
     "node": {
       
+    },
+    "jasmine": {
+      
     }
   },
   "libs": [
     "ecma5",
-    "ecma6",
-    "browser"
+    "ecma6"
   ],
   "ecmaVersion": 6
 }

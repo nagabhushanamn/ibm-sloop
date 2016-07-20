@@ -1,0 +1,16 @@
+
+
+  Unit-Testing
+  ------------
+  
+  
+   we need 'Unit Testing Framework'
+   
+   
+   --> jasmine
+   --> mocha   with chai and sinon
+   
+   --> qunit
+   --> nodeunit
+   
+   -----------------------------------
