@@ -1,0 +1,25 @@
+
+/*
+ * 
+ * 
+
+
+  Node core module
+  ----------------
+ 
+  http
+  https
+  url
+
+  ---------------
+
+  Express
+
+    --> better routing
+    --> middleware support
+    --> template engines support
+
+ ----------------------------------
+ 
+ */
+

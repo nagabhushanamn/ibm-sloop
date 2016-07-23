@@ -1,0 +1,18 @@
+
+
+Initial-setup
+---------------
+
+1.create project directory
+
+2.npm init  --> to create package.json
+
+3.configure 'npm start' script
+
+-------------------------------------
+
+download 'express' framework
+
+npm install express --save
+
+--------------------------------------

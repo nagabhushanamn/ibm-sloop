@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>PM</title>
+<link href="css/bootstrap.css" rel="stylesheet">
+</head>
+<body class="container">
+
+	<div class="page-header">PM - app ( Express + Mongo )</div>
+
+
+	<div class="row">
+		
+		<div class="col-sm-6">
+		
+			<form action="products"
+			      method="post" 
+			      enctype="application/x-www-form-urlencoded">
+			
+				<div class="form-group">
+					<label>Name:</label> 
+					<input type="text" name="name" class="form-control">
+				</div>
+				
+				<div class="form-group">
+					<label>Price:</label> 
+					<input type="number" name="price" class="form-control">
+				</div>
+				
+				<div class="form-group">
+					<label>Description:</label>
+					<textarea name="description" class="form-control"></textarea>
+				</div>
+				
+				<button type="submit" class="btn btn-primary">Save</button>
+				
+			</form>
+		
+		</div>
+
+	</div>
+
+
+</body>
+</html>

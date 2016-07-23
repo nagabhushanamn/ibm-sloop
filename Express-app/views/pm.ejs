@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>PM</title>
+<link href="css/bootstrap.css" rel="stylesheet">
+</head>
+<body class="container">
+
+	<div class="page-header">PM - app ( Express + Mongo )</div>
+	<a href="product-form.html" class="btn btn-primary">Add New</a>
+	<hr/>
+	
+	All Products <hr/>
+	
+	
+	
+     		   <table class="table table-bordered">
+     			<% 
+     			if(allProducts!==null){
+     			
+     			allProducts.forEach(function(product){ 
+     			
+     			%>
+     			
+     			<tr>
+     				<td><%=product.name%></td>
+     				<td><%=product.price%></td>
+     				<td><%=product.description%></td>
+     				<td>
+     					<a href="products/edit/<%=product.id%>">
+     						<span class="glyphicon glyphicon-edit"></span>
+     					</a>
+     				</td>
+     				<td>
+     				<a href="products/del/<%=product.id%>">
+     					<span class="glyphicon glyphicon-trash"></span>
+     				</a>
+     				</td>
+     			</tr>
+     			
+     			<% 
+     			
+     			});
+     			
+     			}
+     			%>
+     			<table>
+	
+
+</body>
+</html>
