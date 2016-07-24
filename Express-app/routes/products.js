@@ -14,16 +14,23 @@ router.get('/', function(req, res, next) {
 		res.render('pm',{allProducts:items});
 	});
 });
+
 router.get('/:id', function(req, res, next) {
-	res.render('pm');
+	Product.findOne({id:req.params.id},function(err,item){
+		console.log(item);
+		res.render('product-form',{product:item});
+	});
 });
+
 router.post('/', function(req, res, next) {
 
+	var id = req.body.id;
 	var name = req.body.name;
 	var price = req.body.price;
 	var description = req.body.description;
 
 	var product = new Product();
+	product.id=id;
 	product.name = name;
 	product.price = price;
 	product.description = description;
@@ -33,15 +40,49 @@ router.post('/', function(req, res, next) {
 			next(err);
 		}
 		console.log(product);
-		res.render('pm');
+		//res.render('pm');
+		res.redirect('products');  // to re-load all products...
 	});
 
 });
 router.put('/', function(req, res, next) {
-	res.render('pm');
+	//res.render('pm');
+	
+
+
+	var id = req.body.id;
+	var name = req.body.name;
+	var price = req.body.price;
+	var description = req.body.description;
+
+	var doc={
+			id:id,
+			name:name,
+			price:price,
+			description: description
+	};
+	
+	console.dir(doc);
+
+	Product.update({id:id},doc,function(err, product, numberAffected) { // Non-blocking IO
+		if (err) {
+			next(err);
+		}
+		console.log(product);
+		//res.render('pm');
+		res.redirect('products');  // to re-load all products...
+	});
+
+
+	
 });
+
 router['delete']('/:id', function(req, res, next) {
-	res.render('pm');
+	
+	Product.remove({id:req.params.id}, function(err,item) {
+		res.redirect('/products');
+	});
+	
 });
 
 module.exports = router;

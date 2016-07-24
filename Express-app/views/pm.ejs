@@ -19,23 +19,24 @@
      			<% 
      			if(allProducts!==null){
      			
-     			allProducts.forEach(function(product){ 
+     				allProducts.forEach(function(product){ 
      			
      			%>
      			
      			<tr>
+     				<td><%=product.id%></td>
      				<td><%=product.name%></td>
      				<td><%=product.price%></td>
      				<td><%=product.description%></td>
      				<td>
-     					<a href="products/edit/<%=product.id%>">
-     						<span class="glyphicon glyphicon-edit"></span>
-     					</a>
+	     				<form method="GET" action="products/<%=product.id%>">
+	  						<button type="submit">edit</button>
+						</form>
      				</td>
      				<td>
-     				<a href="products/del/<%=product.id%>">
-     					<span class="glyphicon glyphicon-trash"></span>
-     				</a>
+	     				<form method="POST" action="products/<%=product.id%>?_method=DELETE">
+	  						<button type="submit">delete</button>
+						</form>
      				</td>
      			</tr>
      			

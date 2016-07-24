@@ -4,16 +4,17 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var methodOverride = require('method-override');
 
 
 var mongoose=require("mongoose");
-var uri="mongodb://nag:nagnag@ds027165.mlab.com:27165/mydb";
+//var uri="mongodb://nag:nagnag@ds027165.mlab.com:27165/mydb";
+var uri="mongodb://localhost:27017/pm";
 mongoose.connect(uri);
 
 var products = require('./routes/products');
 
 var app = express();
-
 
 //------------------------------------------------
 
@@ -85,6 +86,10 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+
+app.use(methodOverride('_method'));
+
 
 app.use('/products',products);
 

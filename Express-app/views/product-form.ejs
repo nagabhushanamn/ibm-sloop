@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>PM</title>
-<link href="css/bootstrap.css" rel="stylesheet">
+<link href="/css/bootstrap.css" rel="stylesheet">
 </head>
 <body class="container">
 
@@ -14,28 +14,30 @@
 		
 		<div class="col-sm-6">
 		
-			<form action="products"
+			<form action="/products?_method=PUT"
 			      method="post" 
 			      enctype="application/x-www-form-urlencoded">
 			
 				<div class="form-group">
 					<label>Id:</label> 
-					<input type="number" name="id" class="form-control">
+					<input type="number" name="id" value="<%=product.id%>" class="form-control">
 				</div>
 				
 				<div class="form-group">
 					<label>Name:</label> 
-					<input type="text" name="name" class="form-control">
+					<input type="text" name="name" value="<%=product.name%>" class="form-control">
 				</div>
 				
 				<div class="form-group">
 					<label>Price:</label> 
-					<input type="number" name="price" class="form-control">
+					<input type="number" name="price" value="<%=product.price%>" class="form-control">
 				</div>
 				
 				<div class="form-group">
 					<label>Description:</label>
-					<textarea name="description" class="form-control"></textarea>
+					<textarea name="description" class="form-control">
+						<%=product.description%>
+					</textarea>
 				</div>
 				
 				<button type="submit" class="btn btn-primary">Save</button>

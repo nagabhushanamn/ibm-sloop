@@ -5,6 +5,7 @@
 var mongoose=require('mongoose');
 
 var ProductSchema = mongoose.Schema({
+	id : Number,
     name: String,
     price:Number,
     description:String
