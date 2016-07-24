@@ -1,0 +1,4 @@
+
+
+brew install v8
+clang++ -std=c++11 -I/usr/local/Cellar/v8/4.9.385.35 /usr/local/Cellar/v8/4.9.385.35/lib/*.a hello_world.cpp -o hello_world

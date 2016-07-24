@@ -1,0 +1,79 @@
+
+
+
+ NodeJS
+ -------
+ 
+ Popular server-side platform/technology
+  
+  
+  conceptual aside
+  
+    processor,
+    machine code,
+    and c++
+  
+  
+  Miroprocessor ( a tiny machine )
+  
+    Instructions
+    
+    IA-32
+    x86-64
+    ARM
+    MIPS
+    
+    Machine Code ( language )
+    
+     Programming languages spoken by
+     computer processors
+     
+     every program you run on your 
+     computer has neen converted(compiled)
+     into machine code.
+     
+---------------------------------------------------
+
+|    Javascript
+|    C/C++
+|    Assembly Language
+|    Machine Language
+V
+----------------------------------------------------       
+
+V8 is written in C++
+
+-----------------------------------------------------
+
+
+Javascript Aside
+----------------
+
+Javascript Engines
+and The ECMAScript specifiction
+
+ECMAScript:
+The standard Javascript is based on
+
+Needed a standard since there are many engines
+
+
+A Javascript engine:
+A program that converts Javascript code
+into something the computer processor can
+understand
+
+And it should follow the ECMAScript standard
+on how language should work and what features it
+should have.
+
+-----------------------------------------
+
+V8 - Under The Hood
+
+-----------------------------------------
+
+
+
+
+
