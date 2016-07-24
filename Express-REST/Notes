@@ -1,0 +1,19 @@
+
+
+
+  // Products Management ( PM )
+  -------------------------------
+  
+  
+  uri:  /products
+  -----------------
+  
+  GET  : /products      --> render all products
+  GET  : /products/id   --> render product
+  
+  POST : /products      --> create new product
+  
+  PUT  : /products/id   --> create/update product
+  
+  DELETE : /products/id --> delete product
+  
